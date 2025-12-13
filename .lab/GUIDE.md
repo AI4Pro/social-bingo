@@ -33,7 +33,7 @@ Keep this `.lab/GUIDE.md` open (📌 Pin).
 After completing this workshop, you:
 1. **Can onboard AI to your codebase** and workflows with context engineering
 2. **Understand the agentic primitives** to build an AI-first engineering flow
-3. **Unlocked agentic abundance** to scale exploration and speed up learning across more development tasks
+3. **Unlocked agentic abundance** to scale exploration and speed up learning across more development tasks (abundance = overflod)
 4. **felt the vibes** … hey, you designed and build your social social bingo; use to create more good vibes
 
 ## Recommendation
