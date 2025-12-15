@@ -83,6 +83,7 @@ body {
 
 /* Tile styles */
 .tile {
+  color: var(--pixel-paper);
   position: relative;
   display: flex;
   align-items: center;
@@ -96,17 +97,24 @@ body {
   line-height: 1;
 }
 
-.tile--marked { background: linear-gradient(180deg, rgba(255,218,102,0.14), rgba(255,160,160,0.06)); border-color: rgba(255,200,100,0.9); }
-.tile--winning { background: linear-gradient(180deg, rgba(255,210,50,0.22), rgba(255,150,20,0.06)); border-color: rgba(255,200,40,1); }
+.tile--marked {
+  color: var(--pixel-paper);
+  background: linear-gradient(180deg, rgba(255,218,102,0.14), rgba(255,160,160,0.06));
+  border-color: rgba(255,200,100,0.9);
+}
+
+.tile--winning {
+  color: var(--pixel-paper);
+  background: linear-gradient(180deg, rgba(255,210,50,0.22), rgba(255,150,20,0.06));
+  border-color: rgba(255,200,40,1);
+}
 
 .pixel-check { width: 18px; height: 18px; position: absolute; top: 6px; right: 6px; image-rendering: pixelated }
 
 /* Modal */
 .pixel-modal-backdrop { background: linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)); position: fixed; inset: 0; display:flex; align-items:center; justify-content:center; z-index:50 }
-\n\n.pixel-badge { display:inline-block; background: linear-gradient(180deg, var(--pixel-accent-2), rgba(0,0,0,0.04)); color: #08131a; font-weight:700; padding:0.4rem 0.6rem; border-radius:6px; border:3px solid rgba(0,0,0,0.6); box-shadow:0 4px 0 rgba(0,0,0,0.5); }
+
+.pixel-badge { display:inline-block; background: linear-gradient(180deg, var(--pixel-accent-2), rgba(0,0,0,0.04)); color: #08131a; font-weight:700; padding:0.4rem 0.6rem; border-radius:6px; border:3px solid rgba(0,0,0,0.6); box-shadow:0 4px 0 rgba(0,0,0,0.5); }
 
 @keyframes pixel-pop { 0% { transform: scale(0.9); } 60% { transform: scale(1.05); } 100% { transform: scale(1); } }
 .pixel-pop { animation: pixel-pop .45s cubic-bezier(.22,.9,.26,1); }
-
-
-

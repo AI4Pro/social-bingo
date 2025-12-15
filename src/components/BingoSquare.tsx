@@ -9,9 +9,9 @@ interface BingoSquareProps {
 export function BingoSquare({ square, isWinning, onClick }: BingoSquareProps) {
   const baseClasses = 'tile rounded select-none text-xs leading-tight';
 
-  const stateClasses = square.isMarked ? (isWinning ? 'tile--winning' : 'tile--marked') : 'bg-white text-gray-700 active:bg-gray-100';
+  const stateClasses = square.isMarked ? (isWinning ? 'tile--winning' : 'tile--marked') : 'text-white';
 
-  const freeSpaceClasses = square.isFreeSpace ? 'font-bold text-sm' : '';
+  const freeSpaceClasses = square.isFreeSpace ? 'font-bold text-sm text-white' : '';
 
   return (
     <button
